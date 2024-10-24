@@ -1,0 +1,143 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@import "transparent.css";
+
+window#waybar {
+  background: @tran;
+  color: @main-color;
+}
+
+#workspaces,
+#window,
+#clock,
+#tray,
+#battery,
+#backlight,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+
+#custom-l_end,
+#custom-r_end,
+#custom-sl_end,
+#custom-sr_end,
+#custom-rl_end,
+#custom-rr_end {
+  color: @main-color;
+  background: @tran;
+  opacity: 1;
+  margin: 4px 0px 0px 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: solid;
+  border-color: @main-color;
+}
+
+tooltip {
+  background: @tool-bg;
+  color: @tool-color;
+  border-radius: 30px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: @tool-border;
+}
+
+tooltip label {
+  padding: 6px;
+}
+
+#workspaces button {
+  border-radius: 50%;
+  padding: 0px 6px;
+  margin: 0px 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+  background: #3a425f;
+  color: @main-color;
+}
+
+#workspaces button.empty {
+  background: #3a425f;
+  color: #3a425f;
+}
+
+#workspaces button.active {
+  background: @wb-act-bg;
+  color: #3a425f;
+}
+
+#workspaces button:hover {
+  background: @wb-hvr-bg;
+  color: @wb-hvr-color;
+}
+
+#clock {
+  color: @clock;
+}
+
+#pulseaudio {
+  color: @pulseaudio;
+}
+
+#tray,
+#network {
+  color: @tray-network;
+}
+
+#backlight {
+  color: @custom-backlight;
+}
+
+#battery {
+  color: @battery;
+}
+
+#custom-r_end {
+  border-radius: 0px 22px 22px 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  border-right-width: 3px;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+}
+
+#custom-l_end {
+  border-radius: 22px 0px 0px 22px;
+  margin-left: 0px;
+  padding-left: 0px;
+  border-left-width: 3px;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+}
+
+#custom-sr_end {
+  border-radius: 26px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+#custom-sl_end {
+  border-radius: 26px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#custom-rr_end {
+  border-radius: 0px 22px 22px 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+#custom-rl_end {
+  border-radius: 22px 0px 0px 22px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
