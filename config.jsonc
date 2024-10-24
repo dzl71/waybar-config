@@ -61,6 +61,7 @@
 
 	"tray": {
 		"spacing": 7,
+		"icon-size": 24,
 	},
 
 	"battery": {
