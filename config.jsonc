@@ -95,7 +95,7 @@
 			"default": ["", ""]
 		},
 		"scroll-step": 1,
-		"on-click": "sh -c '(sleep 0.1s; pavucontrol)' & disown",
+		"on-click": "sh -c '(pavucontrol)' & disown",
 		"ignored-sinks": ["Easy Effects Sink"]
 	},
 
@@ -126,6 +126,7 @@
 
 	"hyprland/language": {
 		"format": "| 󰌌 {}",
+		"on-click": "sh -c 'hyprctl switchxkblayout at-translated-set-2-keyboard next'",
 	},
 
 	// modules for padding //
